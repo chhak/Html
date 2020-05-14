@@ -217,13 +217,32 @@
             float: left;
             height: 100%;            
         }
+        main > .info > div > img {
+            margin-bottom: 16px;
+        }
+
+        main > .info > div > ul > li {
+            line-height: 19px;
+        }
+
         main > .info > div:nth-child(1) {width: 385px;}
         main > .info > div:nth-child(2) {
             width: 229px;
             border-left: 1px solid #d7d7d7;
             border-right: 1px solid #d7d7d7;
+            padding-left: 20px;
+            box-sizing: border-box;
         }
         main > .info > div:nth-child(3) {width: 364px;}
+
+        main > .info > .cs > div:nth-of-type(1) {            
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        main > .info > .cs > div:nth-of-type(1) > * {
+            float: left;
+            margin-right: 16px;
+        }
 
         /* 푸터 */
         footer {
@@ -387,8 +406,33 @@
             </div>
 
             <div class="info">
-                <div></div>
-                <div></div>
+                <div class="cs">
+                    <img src="./img/main_sub2_cs_tit.png" alt="고객센터안내"/>
+                    <div>
+                        <img src="./img/main_sub2_cs_img.png" alt="이미지"/>
+                        <img src="./img/main_sub2_cs_txt.png" alt="1666-777"/>
+                        <ol>
+                            <li>평일: AM 09:00 ~ PM 06:00</li>
+                            <li>점심: PM 12:00 ~ PM 01:00</li>
+                            <li>토, 일요일, 공휴일 휴무</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/main_sub2_cs_bt1.png" alt="고객문의"/></a>
+                        <a href="#"><img src="./img/main_sub2_cs_bt2.png" alt="자주묻는 질문"/></a>
+                        <a href="#"><img src="./img/main_sub2_cs_bt3.png" alt="배송조회"/></a>
+                    </div>
+                </div>
+                <div class="account">
+                    <img src="./img/main_sub2_account_tit.png" alt="계좌안내"/>
+                    <ul>
+                        <li>기업은행 123-456789-01-01-012</li>
+                        <li>국민은행 01-1234-56789</li>
+                        <li>우리은행 123-456789-01-01-012</li>
+                        <li>하나은행 123-456789-01-01</li>
+                        <li>예 금 주 (주)팜스토리</li>
+                    </ul>
+                </div>
                 <div></div>
             </div>
         </main>
