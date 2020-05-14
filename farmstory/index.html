@@ -18,7 +18,6 @@
         #wrapper {
             width: 980px;
             height: auto;
-            border: 1px solid red;
             margin: 0 auto;
         }
 
@@ -110,8 +109,6 @@
         main > div {
             width: 100%;
             margin-top: 10px;
-            border: 1px solid green;
-            box-sizing: border-box;
         }
 
         /* 슬라이더 */
@@ -162,8 +159,7 @@
             display: block;
             width: 50%;
             height: 100%;
-            padding: 10px;
-            border: 1px solid orange;
+            padding: 10px;           
             box-sizing: border-box;
         }
         main > .quick > a:nth-child(1) {background-image: url('./img/main_banner_sub1_bg.jpg');}
@@ -178,9 +174,7 @@
             position: relative;
             float: left;
             width: 33.33%;
-            height: 100%;
-            border: 1px solid blue;
-            box-sizing: border-box;
+            height: 100%;            
         }
         main > .latest > div > img:first-child {
             position: absolute;
@@ -212,7 +206,24 @@
         /* 정보 */
         main > .info {
             height: 154px;
+            padding: 14px 0;
+            box-sizing: border-box;
+            background-image: url('./img/main_cs_top_line.png');
+            background-repeat: no-repeat;
+            background-position-y: -3px;
         }
+
+        main > .info > div {
+            float: left;
+            height: 100%;            
+        }
+        main > .info > div:nth-child(1) {width: 385px;}
+        main > .info > div:nth-child(2) {
+            width: 229px;
+            border-left: 1px solid #d7d7d7;
+            border-right: 1px solid #d7d7d7;
+        }
+        main > .info > div:nth-child(3) {width: 364px;}
 
         /* 푸터 */
         footer {
@@ -375,7 +386,11 @@
                 </div>                
             </div>
 
-            <div class="info"></div>            
+            <div class="info">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </main>
         <footer>
             <img src="./img/footer_logo.png" alt="푸터로고"/>
