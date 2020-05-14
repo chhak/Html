@@ -104,9 +104,7 @@
         /* 메인 */
         main {
             width: 100%;
-            height: auto;
-            border: 1px solid blue;
-            box-sizing: border-box;
+            height: auto;            
         }
 
         main > div {
@@ -118,8 +116,44 @@
 
         /* 슬라이더 */
         main > .slider {
+            position: relative;
             height: 312px;
         }
+
+        main > .slider > img {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            z-index: 100;
+        }
+
+        main > .slider > ul {
+            position: relative;
+            width: 100%;
+            height: 100%;            
+            overflow: hidden;
+        }
+        main > .slider > ul > li {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        main > .slider > ul > li:nth-child(1) {left: 0;}
+        main > .slider > ul > li:nth-child(2) {left: 100%;}
+        main > .slider > ul > li:nth-child(3) {left: 200%;}
+
+        main > .slider > .banner {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 230px;
+            height: 312px;
+            background-image: url('./img/main_banner_bg.jpg');
+        }
+
+
 
         /* 바로가기 */
         main > .quick {
@@ -141,9 +175,20 @@
             width: 100%;
             height: 120px;
             margin-top: 10px;
-            border: 1px solid blue;
-            box-sizing: border-box;
+            border-top: 1px solid #c5bd9f;
         }
+        footer > img {}
+        footer > p {
+            float: right;
+            margin-right: 180px;
+            margin-top: 20px;
+            line-height: 22px;
+        }
+        footer > p > span {
+            font-weight: bold;
+            color: #a588a5;
+        }
+
     </style>
 </head>
 <body>
@@ -169,12 +214,34 @@
 
         </header>
         <main>
-            <div class="slider"></div>
+            <div class="slider">
+                
+                <img src="./img/main_slide_img_tit.png" alt="사람과 자연을 사랑하는 팜스토리"/>
+                
+                <ul>
+                    <li><img src="./img/main_slide_img1.jpg" alt="slide1"></li>
+                    <li><img src="./img/main_slide_img2.jpg" alt="slide2"></li>
+                    <li><img src="./img/main_slide_img3.jpg" alt="slide3"></li>
+                </ul>
+
+                <div class="banner">
+                    <img src="./img/main_banner_txt.png" alt="GRAND OPEN"/>
+                    <img src="./img/main_banner_tit.png" alt="30% 할인 이벤트"/>
+                    <img src="./img/main_banner_img.png" alt="과일">
+                </div>
+            </div>
             <div class="quick"></div>
             <div class="latest"></div>
             <div class="info"></div>            
         </main>
-        <footer></footer>
+        <footer>
+            <img src="./img/footer_logo.png" alt="푸터로고"/>
+            <p>
+                (주)더조은 / 사업자번호 123-45-67890 / 통신판매신고 제 2013호 / 등록번호 더조은1234 / 발행인 : 홍길동<br/>
+                대표자 : 홍길동 / 개인정보관리자 : 홍길동 / ☎ 051) 123-4567 / 부산광역시 부산진구 부전동 123 5층<br/>
+                <span>Copyright ⓒ(주)더조은 All rights reserved.</span> 
+            </p>
+        </footer>
     </div>
 </body>
 </html>
