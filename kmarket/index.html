@@ -252,7 +252,7 @@
         }
         main > section > section > h3 > span{
             display: inline-block;            
-            margin: 6px;            
+            margin: 10px;            
             border-bottom: 2px solid #111;
             font-weight: bold;
             font-size: 16px;
@@ -261,8 +261,61 @@
             display: block;
             width: 100%;
             height: 100%;
+            padding: 10px;
             border: 1px solid pink;
-            box-sizing: border-box;
+            box-sizing: border-box;            
+        }
+
+        main > section > section > article .thumb {
+            width: 100%;
+            height: 230px;
+            margin: 0px auto;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        main > section > section > article h2 {            
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 4px;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        main > section > section > article p {
+            color: #222;
+            font-size: 12px;
+            line-height: 16px;
+            margin: 4px 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        main > section > section > article > a:hover > p {text-decoration: underline;}
+
+        main > section > section > article del::after {content: "원";}
+        main > section > section > article ins::after {content: "원";}        
+        main > section > section > article .org_price > del {
+            color: #aaa;
+        }
+        main > section > section > article .org_price > span {
+            color: #eb000a;
+        }
+        main > section > section > article .org_price > span::after { content: "↓"; }
+        main > section > section > article .dis_price { margin-top: 4px; }
+        main > section > section > article .dis_price > ins {            
+            font-size: 14px;
+            text-decoration: none;
+        }
+        main > section > section > article .dis_price > span {
+            display: inline-block;
+            font-size: 0;
+            vertical-align: text-bottom;
+            width: 55px;
+            height: 13px;
+            background: url('./img/ico_freeshipping.gif') no-repeat;
         }
         
         /* 슬라이더 영역 */
@@ -455,14 +508,144 @@
                 <!-- 히트상품 영역 -->
                 <section class="hit">
                     <h3><span>히트상품</span></h3>
-                    <article><a href="#"></a></article>
-                    <article><a href="#"></a></article>
-                    <article><a href="#"></a></article>
-                    <article><a href="#"></a></article>
-                    <article><a href="#"></a></article>
-                    <article><a href="#"></a></article>
-                    <article><a href="#"></a></article>
-                    <article><a href="#"></a></article>
+                    <article>
+                        <a href="#">
+                            <div class="thumb">
+                              <img src="./img/thumb-sample-t1.jpg" alt="t1">
+                            </div>
+                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
+                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <div class="org_price">
+                              <del>30,000</del>
+                              <span>10%</span>
+                            </div>
+                            <div class="dis_price">
+                              <ins>27,000</ins>
+                              <span>무료배송</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="#">
+                            <div class="thumb">
+                              <img src="./img/thumb-sample-t1.jpg" alt="t1">
+                            </div>
+                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
+                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <div class="org_price">
+                              <del>30,000</del>
+                              <span>10%</span>
+                            </div>
+                            <div class="dis_price">
+                              <ins>27,000</ins>
+                              <span>무료배송</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <div class="thumb">
+                              <img src="./img/thumb-sample-t1.jpg" alt="t1">
+                            </div>
+                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
+                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <div class="org_price">
+                              <del>30,000</del>
+                              <span>10%</span>
+                            </div>
+                            <div class="dis_price">
+                              <ins>27,000</ins>
+                              <span>무료배송</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <div class="thumb">
+                              <img src="./img/thumb-sample-t1.jpg" alt="t1">
+                            </div>
+                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
+                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <div class="org_price">
+                              <del>30,000</del>
+                              <span>10%</span>
+                            </div>
+                            <div class="dis_price">
+                              <ins>27,000</ins>
+                              <span>무료배송</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <div class="thumb">
+                              <img src="./img/thumb-sample-t1.jpg" alt="t1">
+                            </div>
+                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
+                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <div class="org_price">
+                              <del>30,000</del>
+                              <span>10%</span>
+                            </div>
+                            <div class="dis_price">
+                              <ins>27,000</ins>
+                              <span>무료배송</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <div class="thumb">
+                              <img src="./img/thumb-sample-t1.jpg" alt="t1">
+                            </div>
+                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
+                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <div class="org_price">
+                              <del>30,000</del>
+                              <span>10%</span>
+                            </div>
+                            <div class="dis_price">
+                              <ins>27,000</ins>
+                              <span>무료배송</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <div class="thumb">
+                              <img src="./img/thumb-sample-t1.jpg" alt="t1">
+                            </div>
+                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
+                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <div class="org_price">
+                              <del>30,000</del>
+                              <span>10%</span>
+                            </div>
+                            <div class="dis_price">
+                              <ins>27,000</ins>
+                              <span>무료배송</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <div class="thumb">
+                              <img src="./img/thumb-sample-t1.jpg" alt="t1">
+                            </div>
+                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
+                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <div class="org_price">
+                              <del>30,000</del>
+                              <span>10%</span>
+                            </div>
+                            <div class="dis_price">
+                              <ins>27,000</ins>
+                              <span>무료배송</span>
+                            </div>
+                        </a>
+                    </article>
+                    
                 </section>
                 <!-- 추천상품 영역 -->
                 <section class="recommend">
