@@ -13,7 +13,8 @@
     <script>
         $(document).ready(function(){
           $('.slider > ul').bxSlider({
-              pager: false
+              pager: false,
+              easing: 'linear'
           });
         });
       </script>
@@ -210,6 +211,7 @@
             border: 1px solid #787f89;
             background: #fff;
             box-sizing: border-box;
+            z-index: 10000;
         }
 
         
@@ -234,10 +236,41 @@
             box-sizing: border-box;
         }
 
-        main > section > section {}
+        main > section > section {
+            width: 100%;
+            height: auto;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        main > section > section > article {
+            float: left;
+            width: 25%;
+            height: 345px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        main > section > section > h3 > span{
+            display: inline-block;            
+            margin: 6px;            
+            border-bottom: 2px solid #111;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        main > section > section > article > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid pink;
+            box-sizing: border-box;
+        }
         
         /* 슬라이더 영역 */
-        main > section > .slider {}
+        main > section > .slider {
+            width: 100%;
+            height: 425px;
+            overflow: hidden;
+        }
         main > section > .slider > .bx-wrapper {
             -moz-box-shadow: none;
             -webkit-box-shadow: none;
@@ -420,13 +453,53 @@
                     </ul>
                 </section>
                 <!-- 히트상품 영역 -->
-                <section class="hit"></section>
+                <section class="hit">
+                    <h3><span>히트상품</span></h3>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                </section>
                 <!-- 추천상품 영역 -->
-                <section class="recommend"></section>
+                <section class="recommend">
+                    <h3><span>추천상품</span></h3>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                </section>
                 <!-- 최신상품 영역 -->
-                <section class="new"></section>
+                <section class="new">
+                    <h3><span>최신상품</span></h3>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                </section>
                 <!-- 할인상품 영역 -->
-                <section class="discount"></section>
+                <section class="discount">
+                    <h3><span>할인상품</span></h3>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                    <article><a href="#"></a></article>
+                </section>
             </section>
         </main>
         <footer>
