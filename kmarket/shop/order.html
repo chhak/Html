@@ -164,21 +164,39 @@
                     
                     <section>
                         <article class="delivery">
-                            <h1>배송정보</h1>
-                            
-                            <div class="user">
-                                <label>주문자 <input type="text" name="name" /></label>
-                                <label>휴대폰 <input type="text" name="hp" /><span>- 포함 입력</span></label>
-                            </div>
-    
-                            <div class="address">
-                                <label>
-                                    우편번호 <input type="text" name="zip" value="54321"/>
-                                    <input type="button" value="검색" />
-                                </label>
-                                <label>기본주소 <input type="text" name="addr1" class="addr" value="부산광역시 부산진구 신천대로 123"/></label>
-                                <label>상세주소 <input type="text" name="addr2" class="addr" value="더조은직업학교 5층 501호"/></label>
-                            </div>
+                          <h1>배송정보</h1>                          
+                          <table>
+                            <tr>
+                              <td>주문자</td>
+                              <td><input type="text" name="orderer" /></td>
+                            </tr>
+                            <tr>
+                              <td>휴대폰</td>
+                              <td>
+                                <input type="text" name="hp" />
+                                <span>- 포함 입력</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>우편번호</td>
+                              <td>
+                                <input type="text" name="zip"/>
+                                <input type="button" value="검색"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>기본주소</td>
+                              <td>
+                                <input type="text" name="addr1"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>상세주소</td>
+                              <td>
+                                <input type="text" name="addr2"/>
+                              </td>
+                            </tr>
+                          </table>
                         </article>
     
                         <article class="discount">
